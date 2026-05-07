@@ -4,6 +4,7 @@ from game.game_state import GameState
 from agents.random_agent import RandomAgent
 from agents.heuristic_agent import HeuristicAgent
 from agents.smart_heuristic_agent import SmartHeuristicAgent
+from agents.monte_carlo_agent import MonteCarloAgent
 
 # def test_agent(agent, name):
 #     game = GameState()
@@ -32,7 +33,7 @@ from agents.smart_heuristic_agent import SmartHeuristicAgent
 # test_agent(RandomAgent(), "Random Agent")
 # test_agent(HeuristicAgent(), "Heuristic Agent")
 # test_agent(SmartHeuristicAgent(), "Smart Heuristic Agent")
-
+# test_agent(MonteCarloAgent(), "Monte Carlo Agent")
 
 
 def test_full_game(agent, name):
@@ -60,3 +61,4 @@ def test_full_game(agent, name):
 test_full_game(RandomAgent(), "Random Agent")
 test_full_game(HeuristicAgent(), "Heuristic Agent")
 test_full_game(SmartHeuristicAgent(), "Smart Heuristic Agent")
+test_full_game(MonteCarloAgent(), "Monte Carlo Agent")
